@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel Decorative', serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.safe-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/background2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-content {
+  width: 80%;
+  max-width: 1600px;
+  min-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+.title {
+  position: absolute;
+  width: 1615px;
+  height: 53px;
+  top: 60px;
+  left: calc(50% - 807.5px);
+  font-family: 'Crimson Pro';
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 53px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.sub-instruction {
+  position: absolute;
+  width: 872px;
+  height: 52px;
+  left: calc(50% - 436px);
+  top: 150px;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 52px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.back-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 98px 50px;
+  gap: 10px;
+  position: absolute;
+  width: 100px;
+  height: 46px;
+  left: 36px;
+  top: 550px;
+  background: url('assets/back button.png') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+.back-label {
+  width: 41px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.next-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 98px 50px;
+  gap: 10px;
+  position: absolute;
+  width: 100px;
+  height: 46px;
+  left: 1330px;
+  top: 550px;
+  background: url('assets/back button.png') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.next-button:hover {
+  transform: scale(1.05);
+}
+
+.next-label {
+  width: 41px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.divine-container {
+  position: absolute;
+  width: 360px;
+  height: 531px;
+  left: 435px;
+  top: 133px;
+  overflow: hidden;
+}
+
+.divine-bg {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url('assets/card divine.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.divine-bg:hover {
+  filter: brightness(1.3); /* Increase brightness by 30% */
+  transition: filter 0.3s ease-in-out; /* Smooth effect */
+}
+
+/* Component 5: Text Section */
+.component5-text {
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  left: 420px;
+  top: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 120px;
+  gap: 10px;
+  background-image: url('assets/button1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.component5-text:hover {
+  filter: brightness(1.3); /* Increase brightness by 30% */
+  transition: filter 0.3s ease-in-out; /* Smooth effect */
+}
+
+.component5-text:active {
+  transform: scale(0.95);
+}
+
+.text5-box {
+  width: 248px;
+  height: 84px;
+  font-family: 'Crimson Text', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.arcane-container {
+  position: absolute;
+  width: 360px;
+  height: 531px;
+  left: 840px;
+  top: 143px;
+  overflow: hidden;
+}
+
+.arcane-bg {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url('assets/card arcane.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.arcane-bg:hover {
+  filter: brightness(1.3); /* Increase brightness by 30% */
+  transition: filter 0.3s ease-in-out; /* Smooth effect */
+}
+
+/* Component 6: Text Section */
+.component6-text {
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  left: 820px;
+  top: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 120px;
+  gap: 10px;
+  background-image: url('assets/button1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.component6-text:hover {
+  filter: brightness(1.3); /* Increase brightness by 30% */
+  transition: filter 0.3s ease-in-out; /* Smooth effect */
+}
+
+.component6-text:active {
+  transform: scale(0.95);
+}
+
+.text6-box {
+  width: 248px;
+  height: 84px;
+  font-family: 'Crimson Text', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+}

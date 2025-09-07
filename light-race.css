@@ -1,0 +1,141 @@
+/* light race */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel Decorative', serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.safe-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-content {
+  width: 80%;
+  max-width: 1600px;
+  min-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+.back-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 98px 50px;
+  gap: 10px;
+  position: absolute;
+  width: 100px;
+  height: 46px;
+  left: 36px;
+  top: 550px;
+  background: url('assets/back button.png') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
+.back-label {
+  width: 41px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.title {
+  position: absolute;
+  width: 654px;
+  height: 65px;
+  left: calc(50% - 327px);
+  top: 80px;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 65px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.race-description {
+  position: absolute;
+  width: 451px;
+  height: 282px;
+  left: 300px;
+  top: calc(50% - 141px + 31px);
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+  line-height: 47px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px #000000;
+}
+
+.race-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 93px 78px;
+  gap: 10px;
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  background: url('assets/lightracebutton.png') no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.race-button:hover {
+  transform: scale(1.05);
+  drop-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.label {
+  font-size: 30px;
+  line-height: 49px; 
+  text-align: center;
+  color: #000000;
+    text-decoration: none;
+}
+
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
+    
+/* Positioning each race button */
+.component4 { top: 130px; left: 860px; }
+.component5 { top: 260px; left: 860px; }
+.component6 { top: 390px; left: 860px; }
+.component7 { top: 520px; left: 860px; }
+}

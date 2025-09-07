@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel Decorative', serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.safe-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/background1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-content {
+  width: 80%;
+  max-width: 1600px;
+  min-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+}
+
+/* main head */
+.frame3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+  gap: 0px;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  z-index: 1;
+}
+
+.description {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2vw;
+  line-height: 1.4;
+  margin-top: -38%; 
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* question */
+.frame6 {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding: 1vh;
+  width: 60%;
+  height: 60%;
+  left: 60%;
+  top: 5%;
+
+}
+.question {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.0vw;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+
+.frame5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 492.67px;
+  height: 629px;
+  left: 400px;
+  top: 150px;
+  z-index: 4;
+}
+
+.sun {
+  width: 342px;
+  height: 479px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+.sun-image {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url('assets/sunbar.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.light-text {
+  position: absolute;
+  left: 17.56%;
+  right: 17.49%;
+  top: 41.47%;
+  bottom: 41.61%;
+  font-family: 'Cinzel Decorative', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+}
+.frame4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 494px;
+  height: 731px;
+  left: 818px;
+  top: 100px;
+  z-index: 3;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.moon {
+  width: 342px;
+  height: 479px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+.moon-image {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url('assets/moonbar.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.darkness-text {
+  position: absolute;
+  left: 21.52%;
+  right: 21.52%;
+  top: 41.49%;
+  bottom: 41.63%;
+  font-family: 'Cinzel Decorative', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.sun-hover, .moon-hover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.sun-hover:hover, .moon-hover:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.sun-image, .moon-image,
+.light-text, .darkness-text {
+  transition: transform 0.3s ease;
+}
